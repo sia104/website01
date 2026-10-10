@@ -10,3 +10,9 @@ __pycache__/
 # OS/editor
 .DS_Store
 Thumbs.db
+.adlc/evidence/
+.adlc/.venv/
+.adlc/.pytest_cache/
+.adlc/.mypy_cache/
+.adlc/.ruff_cache/
+.adlc/**/__pycache__/

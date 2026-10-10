@@ -1,0 +1,33 @@
+{
+  "adlc_version": "V0.6",
+  "installed_at": "2026-10-10T17:49:34.874596+00:00",
+  "managed_files": {
+    ".adlc/README.md": "c1fbd062de78d4a178bf916cb8755bc094b68c084ad321f4ce36eeae2abef04a",
+    ".adlc/VERSION": "e8dd81dfea495f6429ce156411770bbfc41e702b643cb2a9f040baebb351380d",
+    ".adlc/adlc_config.py": "dd92fa63260dfa63882715491f60dc07b24d586d559bb19928582f7d593e5777",
+    ".adlc/config.json": "8e0154cbe98d8741d936fa94cb6c9d9d2dda1a68252542ce0fce5bdbc9aae15d",
+    ".adlc/evidence.py": "247dcb56558fa1ada9280379bf6393b3fc6c0bd9156f3f15a69a0d68e0ec51c0",
+    ".adlc/gitops.py": "1e33bf33a0e5b6ad21927a5d8928f18ddff671cfb1df704f4cf7c4040c1e4f57",
+    ".adlc/lifecycle.py": "f00138e819513f25c6ef103680b020b33a7a951d74f010c8ce897e5d4ad0867a",
+    ".adlc/preflight.py": "e03431d30a786ad8e1d1eeb3eef671ec7144e53367c5f076ddd33c7648117bff",
+    ".adlc/pyproject.toml": "34decd777cf0b201e0e18f23c3d3683f41227372307ce0a417d8aba7796e378d",
+    ".adlc/quality-gates.json": "c6f966b4fc87e7560857f532a86817972e637cf86b19d73e7b4f45f7ec2d3df5",
+    ".adlc/schema/candidate-lesson.schema.json": "87fa00f30c3f5914f52d5ba2fcd35743e4b84061a9925c9773c60462b5a4e85f",
+    ".adlc/schema/event.schema.json": "17c9a2594dab1d06fc15858653c7ab37fa280a3f97654758ddab05ad3588f868",
+    ".adlc/schema/lesson-status.schema.json": "aa85b06df74542272d65f5a3bde1fdd0b48ab6531cd2a256cabe0a6e67097862",
+    ".adlc/schema/run-manifest.schema.json": "035b00ee04559839ddac95b99e48dd17afbaab9b56dbb48b516eca21fc58dc8d",
+    ".adlc/tests/test_adlc.py": "d7d63f9822784b2e0ecbbb150715474d41939c37b4d19ba91d3064cfd18b3c63",
+    ".adlc/tests/test_gitops.py": "61b50449c945d6cf52adfa2efb0f082afc4c9473f6a7085bedcda4f0a42d7c2a",
+    ".adlc/uv.lock": "b53358beb52260295a85aa2e9e7e6d5109cc1022c1e730c56e9986105d586c1b",
+    ".codex/skills/implement-it/SKILL.md": "cc7e2986f6eca888a01dd7f8731a9f872eb103dfa34925bdb027edb949b5c325",
+    ".codex/skills/retrospect-it/SKILL.md": "4ed5f7d7a6716135592e9f0c93099aa4ed06ffa71e9b114c413f29109a2ee59e",
+    ".codex/skills/spec-it/SKILL.md": "e6e16b96e37cd4d27abefb210336f1c3331adfbd44521a27ada2fcfac49091e0",
+    ".codex/skills/test-it/SKILL.md": "d0383c000492e71dd4547ae259c0739e8ab130b4728fbd26501c4002098b0c43",
+    ".github/workflows/adlc.yml": "11a87cda696db2be3d226b72d085fe24d996087fcad91527118a9f6c42cb1b6c",
+    "AGENTS.md": "863e9af91371a68f7caca71e317518879146253a74afe20f6eb7fcc7ceaf0631"
+  },
+  "schema_version": "1.0",
+  "source_commit": "4825cdb0ac3bd373e56fffb406b74b86427ddc99",
+  "source_ref": "v0.6.0",
+  "source_repository": "https://github.com/sia104/ADLC.git"
+}

@@ -1,0 +1,49 @@
+Build a minimal wedding photography website using the installed ADLC v0.6 workflow.
+
+First read AGENTS.md, the ADLC configuration, lifecycle tooling and installed Codex skills. Execute the actual ADLC lifecycle rather than simulating it, using spec-it, implement-it, test-it and retrospect-it, with deterministic quality gates, Git/GitHub workflow and evidence capture.
+
+PRODUCT REQUIREMENTS
+
+1. Photo source: /data/bride_prep. Read photos directly from this directory without copying them into the Git repository. Support common JPEG/PNG/WebP formats and respect EXIF orientation.
+
+2. Navigation: A fixed, transparent top navigation with two white text links, "Home" and "Galleries", aligned to the top right. No navigation background. Links remain visible while scrolling.
+
+3. Home (/): Display only landscape photographs (width > height after EXIF orientation) from the photo directory. Arrange them in a single vertical sequence, nearly full browser width, with small consistent gaps. Preserve aspect ratios without cropping. Scrolling reveals successive photographs.
+
+4. Galleries (/galleries): Display one clickable gallery icon representing "Bride Prep", visually styled as a small overlapping stack of several photographs from the source directory.
+
+5. Gallery detail (/galleries/bride-prep): Clicking the stack opens a vertically scrollable view of all photographs in that folder, including portrait and landscape images. Preserve aspect ratios. Keep the fixed navigation visible.
+
+6. Styling: Elegant, minimalist, photography-first design. Responsive on desktop and mobile. No unnecessary animations, controls, accounts, database or content-management system.
+
+IMPLEMENTATION CONSTRAINTS
+
+- Choose the simplest maintainable stack. Prefer a lightweight Python server with basic HTML/CSS/JavaScript unless the specification justifies something else.
+- Serve photos read-only from the configured external directory through safe routes. Prevent path traversal and arbitrary filesystem access.
+- Keep the photo directory configurable, defaulting to /data/bride_prep.
+- Handle empty directories, unreadable files and unsupported images gracefully.
+- Use deterministic filename ordering and reasonable lazy loading.
+- Do not commit photographs, private data or local filesystem contents. Configure GitHub repository visibility as private by default.
+- Do not change reusable ADLC infrastructure merely to accommodate this application.
+
+ADLC EXECUTION
+
+1. Run preflight and initiate a versioned evidence run.
+2. Invoke spec-it to produce a minimal testable specification and explicit acceptance criteria. Stop for the mandatory human specification approval.
+3. Once approved, proceed using ADLC lifecycle tooling: create the feature branch, invoke implement-it and build the site.
+4. Invoke test-it independently. Verify navigation, fixed header, landscape filtering, EXIF handling, gallery thumbnail stack, image loading, mobile layout and error handling.
+5. Add automated tests and appropriate application CI, then execute all required deterministic quality gates. Remediate failures using the ADLC process and rerun stale gates.
+6. Start the application on a local server bound to 127.0.0.1, verify it responds over HTTP, and run a browser-based smoke test if available. Report the verified local URL.
+7. Follow ADLC GitHub workflow for commit, push, PR and CI. Preserve mandatory human review and merge gates; never bypass them.
+8. After human merge and lifecycle closure, run retrospect-it and record evidence-backed candidate lessons without modifying the ADLC.
+
+DELIVERABLES
+
+- Working locally hosted website
+- Tested application source
+- README with setup and run instructions
+- Verified local website URL
+- GitHub PR and CI status
+- ADLC evidence, acceptance results, failures and retrospective findings
+
+Work autonomously between mandatory human approval gates. Do not claim any stage, test, browser check, server launch or lifecycle transition succeeded unless actually verified. If blocked, identify the exact blocker and the next required action.
